@@ -35,16 +35,19 @@ static unsigned int lines      = 0;
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 5;
+static unsigned int border_width = 5;
 
 /*
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-	{ "font",        STRING, &font },
-	{ "normfgcolor", STRING, &normfgcolor },
-	{ "normbgcolor", STRING, &normbgcolor },
-	{ "selfgcolor",  STRING, &selfgcolor },
-	{ "selbgcolor",  STRING, &selbgcolor },
-	{ "prompt",      STRING, &prompt },
+	{ "font",         STRING,  &font },
+	{ "normfgcolor",  STRING,  &normfgcolor  },
+	{ "normbgcolor",  STRING,  &normbgcolor  },
+	{ "selfgcolor",   STRING,  &selfgcolor   },
+	{ "selbgcolor",   STRING,  &selbgcolor   },
+	{ "prompt",       STRING,  &prompt       },
+    { "min_width",    INTEGER, &min_width    },
+    { "colorprompt",  INTEGER, &colorprompt  },
+    { "border_width", INTEGER, &border_width },
 };
