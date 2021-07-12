@@ -19,6 +19,9 @@ static const char *fonts[] = {
 	"monospace:size=10",
 };
 
+// alpha
+static const unsigned int alpha = 0xf0;
+
 // prompt
 static char *prompt = NULL;
 
@@ -34,6 +37,13 @@ static char *colors[SchemeLast][2] = {
 	[SchemeNorm] = { normfgcolor, normbgcolor },
 	[SchemeSel]  = { selfgcolor,  selbgcolor  },
 	[SchemeOut]  = { "#000000",   "#00ffff" },
+};
+
+// alphas
+static const unsigned int alphas[SchemeLast][2] = {
+    [SchemeNorm] = { OPAQUE, alpha },
+    [SchemeSel] = { OPAQUE, alpha },
+    [SchemeOut] = { OPAQUE, alpha },
 };
 
 // lines for vertical dmenu
