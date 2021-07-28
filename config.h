@@ -16,7 +16,7 @@ static int colorprompt = 1;
 static char font[] = "monospace:size=10";
 static const char *fonts[] = {
 	font,
-	"monospace:size=10",
+	"Noto Color Emoji:style=Regular:size=16",
 };
 
 // alpha
