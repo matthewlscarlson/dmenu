@@ -20,7 +20,7 @@ static const char *fonts[] = {
 };
 
 // alpha
-static const unsigned int alpha = 0xf0;
+static const unsigned int alpha = 0xff;
 
 // prompt
 static char *prompt = NULL;
